@@ -123,13 +123,13 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="sns"
-          className={`${this.props.article === 'sns' ? 'active' : ''} ${
+          id="contact"
+          className={`${this.props.article === 'contact' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">SNSについて</h2>
+          <h2 className="major">連絡先</h2>
 
           <ul className="icons">
             <li>

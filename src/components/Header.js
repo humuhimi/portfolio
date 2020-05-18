@@ -13,7 +13,7 @@ const Header = (props) => (
       <div className="inner">
         <h1>ふむひみ</h1>
         <p>
-          ふむひみ(僕)が英語・中国語・プログラミング言語を使いながら生きていく生活をアウトプットするサイト
+          ふむひみ(僕)が英語・中国語・プログラミング言語を使いながら生活をアウトプットするサイト
         </p>
       </div>
     </div>
@@ -59,10 +59,10 @@ const Header = (props) => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('sns')
+              props.onOpenArticle('contact')
             }}
           >
-            SNS
+            連絡先
           </button>
         </li>
         <li>
