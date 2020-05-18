@@ -1,20 +1,19 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import humuLogo from '../images/humuhimilogo.jpg';
 
 const Header = (props) => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <span className="icon fa-diamond"></span>
+      <span className="icon fa-diamond">
+        {/* {humuLogo} */}
+      </span>
     </div>
     <div className="content">
       <div className="inner">
-        <h1>Dimension</h1>
+        <h1>ふむひみ</h1>
         <p>
-          A fully responsive site template designed by{' '}
-          <a href="https://html5up.net">HTML5 UP</a> and released
-          <br />
-          for free under the{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
+          ふむひみ(僕)が英語・中国語・プログラミング言語を使いながら生きていく生活をアウトプットするサイト
         </p>
       </div>
     </div>
@@ -23,10 +22,20 @@ const Header = (props) => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('intro')
+              props.onOpenArticle('about')
             }}
           >
-            Intro
+          {/* TODO:後でプロフィールに変える */}
+            プロフィール
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => {
+              props.onOpenArticle('history')
+            }}
+          >
+            経歴
           </button>
         </li>
         <li>
@@ -35,25 +44,34 @@ const Header = (props) => (
               props.onOpenArticle('work')
             }}
           >
-            Work
+            作品
           </button>
         </li>
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('about')
+              props.onOpenArticle('blog')
             }}
           >
-            About
+            ブログ
           </button>
         </li>
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('contact')
+              props.onOpenArticle('sns')
             }}
           >
-            Contact
+            SNS
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => {
+              props.onOpenArticle('others')
+            }}
+          >
+            その他
           </button>
         </li>
       </ul>
