@@ -11,9 +11,9 @@ const Header = (props) => (
     </div>
     <div className="content">
       <div className="inner">
-        <h1>ふむひみ</h1>
+        <h1>humuhimi web</h1>
         <p>
-          ふむひみ(僕)が英語・中国語・プログラミング言語を使いながら生活をアウトプットするサイト
+        サイバー大学生4年生が外国語からプログラミング言語を使った海外生活を垂れ流すサイト
         </p>
       </div>
     </div>
