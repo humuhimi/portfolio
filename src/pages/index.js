@@ -5,6 +5,10 @@ import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
 
+import { useTranslation } from 'react-i18next';
+import { withTranslation } from 'react-i18next';
+import '../i18n';
+
 class IndexPage extends React.Component {
   constructor(props) {
     super(props)
@@ -85,7 +89,15 @@ class IndexPage extends React.Component {
     }
   }
 
+
   render() {
+
+    // const { t, i18n } = useTranslation();
+    const { t, i18n } = this.props;
+    const selectLang = (lang) => {
+      i18n.changeLanguage(lang);
+    }
+
     return (
       <Layout location={this.props.location}>
         <div
@@ -94,6 +106,19 @@ class IndexPage extends React.Component {
           }`}
         >
           <div id="wrapper">
+          <nav>
+        <button onClick={selectLang('ja')}>
+          日本語
+        </button>
+        <button onClick={selectLang('en')}>
+          English
+        </button>
+        <button onClick={selectLang('ja')}>
+          中国語
+        </button>
+        <p>{t('transsample')}</p>
+        </nav>
+
             <Header
               onOpenArticle={this.handleOpenArticle}
               timeout={this.state.timeout}
@@ -115,4 +140,29 @@ class IndexPage extends React.Component {
   }
 }
 
-export default IndexPage
+export const query = graphql`
+  query HomePageQuery {
+    site {
+      siteMetadata {
+        languages {
+          defaultLangKey
+              langs
+        }
+      }
+    }
+  }
+`
+
+const IndexPageComponent = withTranslation()(IndexPage)
+
+
+export default function HomePage(){
+  return(
+    <React.Suspense fallback="loading">
+    <IndexPageComponent />
+  </React.Suspense>
+  )
+}
+
+
+// export default IndexPage

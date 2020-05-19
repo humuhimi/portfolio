@@ -1,8 +1,12 @@
+const languages = require('./src/data/languages');
+
+
 module.exports = {
   siteMetadata: {
     title: 'ふむひみのサイト',
     author: 'humuhimi',
     description: 'ふむひみが日々の生活をアウトプットするサイト',
+    languages
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -42,6 +46,15 @@ module.exports = {
         display: 'minimal-ui',
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
+    },
+    {
+      resolve: 'gatsby-plugin-i18n',
+      options: {
+        langKeyForNull: 'any',
+        langKeyDefault: languages.defaultLangKey,
+        useLangKeyLayout: false,
+        prefixDefault: false,
+      }
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-sass',

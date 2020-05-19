@@ -119,6 +119,9 @@ class Main extends React.Component {
           <p>
           SPAでページ内部にコンテンツ配置するようにする
           </p>
+          <p>
+          もっと見る
+          </p>
           {close}
         </article>
 
