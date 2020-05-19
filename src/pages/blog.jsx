@@ -6,9 +6,8 @@ import Helmet from 'react-helmet';
 import Footer from '../components/Footer'
 import styled from '@emotion/styled';
 
-
-// import { Header, PostList } from 'components';
-// import { Layout } from 'layouts';
+import Layout2 from '../components/Layout2';
+import LandStar from '../images/landscape.jpg';
 
 const transition = {
     easeInOutCubic: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
@@ -137,42 +136,6 @@ const Header = styled.header`
     font-size:2rem;
 `;
 
-const Layout = styled.div`
-    *,
-          *:before,
-          *:after {
-            box-sizing: inherit;
-          }
-          html {
-            text-rendering: optimizeLegibility;
-            overflow-x: hidden;
-            box-sizing: border-box;
-            -ms-overflow-style: scrollbar;
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-          }
-          html,
-          body {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-          }
-
-          body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-          }
-
-    background-image: url('http://heno2.com/star/480/cg866.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 1;
-`;
-
 const PostList = ({ cover, path, date, title, excerpt }) => (
     <Wrapper>
       <Image>
@@ -200,7 +163,7 @@ const PostList = ({ cover, path, date, title, excerpt }) => (
 const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
-    <Layout>
+    <Layout2 background={LandStar}>
       <Helmet title={'Blog Page'} />
       <Header title="Blog Page">ふむひみのブログ</Header>
       <PostWrapper>
@@ -220,7 +183,7 @@ const Index = ({ data }) => {
         })}
       </PostWrapper>
       <Footer />
-    </Layout>
+    </Layout2>
   );
 };
 

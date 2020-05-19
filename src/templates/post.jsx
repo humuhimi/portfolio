@@ -3,6 +3,8 @@ import { graphql, Link } from 'gatsby';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
+import Layout2 from '../components/Layout2';
+import CloudStar from '../images/croud_star.jpg';
 
 // Sugestion
 const SuggestionBar = styled.div`
@@ -16,44 +18,6 @@ const PostSuggestion = styled.div`
   display: flex;
   align-items: center;
   margin: 1rem 3rem 0 3rem;
-`;
-
-// Layout
-
-const Layout = styled.div`
-    *,
-          *:before,
-          *:after {
-            box-sizing: inherit;
-          }
-          html {
-            text-rendering: optimizeLegibility;
-            overflow-x: hidden;
-            box-sizing: border-box;
-            -ms-overflow-style: scrollbar;
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-          }
-          html,
-          body {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-          }
-
-          body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-          }
-
-    background-image: url('http://heno2.com/star/480/cg866.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 1;
 `;
 
 // Header 
@@ -230,7 +194,7 @@ const Post = ({ data, pageContext }) => {
   const image = frontmatter.cover.childImageSharp.fluid;
 
   return (
-    <Layout>
+    <Layout2 background={CloudStar}>
       <Header title={title} date={date} cover={image} />
       <Container>
         <Content input={html} />
@@ -253,7 +217,7 @@ const Post = ({ data, pageContext }) => {
           )}
         </PostSuggestion>
       </SuggestionBar>
-    </Layout>
+    </Layout2>
   );
 };
 
