@@ -5,6 +5,8 @@ import introPic from '../images/humuhimikun.jpeg';
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
 
+import { Link } from 'gatsby';
+
 class Main extends React.Component {
   render() {
     let close = (
@@ -119,6 +121,7 @@ class Main extends React.Component {
           <p>
           SPAでページ内部にコンテンツ配置するようにする
           </p>
+          <Link to="/blog">もっと見る</Link>
           {close}
         </article>
 
