@@ -514,32 +514,32 @@ class Main extends React.Component {
           <ul className="icons">
             <li>
               <a
-                href="https://twitter.com/HuntaroSan"
+                href="https://twitter.com/exitja_humu"
                 className="icon fa-twitter"
               >
                 <span className="label">Twitter</span>
               </a>
             </li>
             <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
+              <a href="https://www.facebook.com/profile.php?id=100009890290074" className="icon fa-facebook">
                 <span className="label">Facebook</span>
               </a>
             </li>
             <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
+              <a href="https://www.instagram.com/exit0ja_humuhimi/" className="icon fa-instagram">
                 <span className="label">Instagram</span>
               </a>
             </li>
             <li>
               <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
+                href="https://github.com/humuhimi"
                 className="icon fa-github"
               >
                 <span className="label">GitHub</span>
               </a>
             </li>
           </ul>
-          <form method="post" action="#">
+          <form method="post" action="mailto:	exit0jap1masaya2@gmail.com?Subject=ふむひみサイトから来た！">
             <div className="field half first">
               <label htmlFor="name">お名前</label>
               <input type="text" name="name" id="name" />
