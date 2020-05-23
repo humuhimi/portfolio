@@ -18,8 +18,8 @@ table {
   tbody {
     tr {
       border: solid _size(border-width) _palette(border);
-      border-left: 0;
-      border-right: 0;
+      // border-left: 0;
+      // border-right: 0;
 
       &:nth-child(2n + 1) {
         background-color: _palette(border-bg);
@@ -28,15 +28,29 @@ table {
   }
 
   td {
-    padding: 0.75em 0.75em;
+    vertical-align: middle;
+    border: solid _size(border-width) _palette(border);
+    color: _palette(fg-bold);
+    font-size: 0.8vw;
+    font-weight: _font(weight);
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    text-align: center;
+    .verticalText {
+      -webkit-writing-mode: vertical-lr;
+      writing-mode: vertical-lr;
+      margin: 0;
+      font-size: 0.2vw;
+    }
   }
 
   th {
+    vertical-align: middle;
+    border: solid _size(border-width) _palette(border);
     color: _palette(fg-bold);
-    font-size: 0.9em;
+    font-size: 1vw;
     font-weight: _font(weight-bold);
-    padding: 0 0.75em 0.75em 0.75em;
-    text-align: left;
+    padding: 0.5rem 0em 0.5rem 0em;
+    text-align: center;
   }
 
   thead {

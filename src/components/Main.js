@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/pic01.jpg'
 import introPic from '../images/my_chara.png';
-import pic02 from '../images/pic02.jpg'
+import History from '../images/history.jpg'
 import pic03 from '../images/pic03.jpg'
 import FaceIcon from '../images/face.jpg';
 import FaceIcon2 from '../images/face2.jpg';
@@ -88,19 +88,66 @@ class Main extends React.Component {
         >
           <h2 className="major">経歴</h2>
           <span className="image main">
-            <img src={pic02} alt="" />
+            <img src={History} alt="経歴" />
           </span>
-          <p>
-          僕が今までしてきたことはブラブラブラブラブラ
-          </p>
-          <p>
-          テキストテキストテキストテキストテキストテキスト
-          テキストテキストテキストテキストテキストテキスト
-          テキストテキストテキストテキストテキストテキスト
-          テキストテキストテキストテキストテキストテキスト
-          テキストテキストテキストテキストテキストテキスト
-          テキストテキストテキストテキストテキストテキスト
-          </p>
+          <table className="table main">
+           <tbody>
+           <tr className="table main tbody tr">
+              <th>期間</th>
+              <th>内容</th>
+              <th>職務</th>
+              <th>言語orツール</th>
+            </tr>
+            <tr>
+              <td>
+              2016/11
+              ~2017/2
+              </td>
+              <td>
+              <p className="verticalText">メディア戦略部門&営業</p>
+              </td>
+              <td>
+              <ul style={{margin: 0 }}>
+                <l1 style={{paddingLeft: '0.2rem' }}>香港・中国インターン/</l1>
+                <l1 style={{paddingLeft: '0.2rem' }}>WordPress編集/</l1>
+                <l1 style={{paddingLeft: '0.2rem' }}>記事作成/</l1>
+                <l1 style={{paddingLeft: '0.2rem' }}>動画編集/</l1>
+                <l1 style={{paddingLeft: '0.2rem' }}>営業兼通訳</l1>
+              </ul>
+              </td>
+              <td>
+              <ul style={{margin: 0 }}>
+                <l1 style={{paddingLeft: '0.2rem' }}>英語/</l1>
+                <l1 style={{paddingLeft: '0.2rem' }}>中国語/</l1>
+                <l1 style={{paddingLeft: '0.2rem' }}>WordPress/</l1>
+              </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+              2018/1
+              ~2018/6
+              </td>
+              <td>簡易掲示板開発</td>
+              <td>
+              <ul style={{margin: 0 }}>
+                <l1 style={{paddingLeft: '0.2rem' }}>インターン/</l1>
+                <l1 style={{paddingLeft: '0.2rem' }}>ログインフォーム/</l1>
+                <l1 style={{paddingLeft: '0.2rem' }}>掲示板投稿フォーム/</l1>
+                <l1 style={{paddingLeft: '0.2rem' }}>掲示板出力フォーム/</l1>
+                <l1 style={{paddingLeft: '0.2rem' }}>投稿削除機能/</l1>
+                <l1 style={{paddingLeft: '0.2rem' }}>投稿編集機能/</l1>
+                <l1 style={{paddingLeft: '0.2rem' }}>画像アップロード機能/</l1>
+                <l1 style={{paddingLeft: '0.2rem' }}>サムネイル作成機能/</l1>
+              </ul>
+              </td>
+              <td>PHP</td>
+            </tr>
+           </tbody>
+          </table>
+
+          <h2 className="major">資格</h2>
+
           {close}
         </article>
 
@@ -113,7 +160,7 @@ class Main extends React.Component {
         >
           <h2 className="major">作品</h2>
           <span className="image main">
-            <img src={pic02} alt="" />
+            <img src={pic03} alt="作品" />
           </span>
           <p>
           僕が作った作品について
