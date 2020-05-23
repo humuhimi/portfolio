@@ -109,16 +109,16 @@ class Main extends React.Component {
               <p>メディア戦略部門&営業</p>
               </td>
               <td>
-              <ul style={{margin: 0 }}>
+              <ul style={{margin: 0,listStyle:"none" }}>
               <li>香港と広州にて中国語と英語での営業サポート件通訳</li>
               <li>メルマガ作成・動画編集・ブログ作成などなど</li>
               </ul>
               </td>
               <td>
-              <ul style={{margin: 0 }}>
-                <l1 >英語/</l1>
-                <l1 >中国語/</l1>
-                <l1 >WordPress/</l1>
+              <ul style={{margin: 0,listStyle:"none" }}>
+                <li>英語</li>
+                <li>中国語</li>
+                <li>WordPress</li>
               </ul>
               </td>
             </tr>
@@ -132,15 +132,15 @@ class Main extends React.Component {
               簡易掲示板開発
               </td>
               <td>
-              <ul style={{margin: 0 }}>
-                <l1>インターン/</l1>
-                <l1 >ログインフォーム/</l1>
-                <l1 >掲示板投稿フォーム/</l1>
-                <l1 >掲示板出力フォーム/</l1>
-                <l1 >投稿削除機能/</l1>
-                <l1 >投稿編集機能/</l1>
-                <l1 >画像アップロード機能/</l1>
-                <l1 >サムネイル作成機能/</l1>
+              <ul style={{margin: 0,listStyle:"none" }}>
+                <li>ログインフォーム</li>
+                <li>掲示板投稿フォーム</li>
+                <li>掲示板出力フォーム</li>
+                <li>投稿削除機能</li>
+                <li>投稿編集機能</li>
+                <li>画像アップロード機能</li>
+                <li>サムネイル作成機能</li>
+                <li>フレームワークなし開発</li>
               </ul>
               </td>
               <td>
@@ -271,50 +271,7 @@ class Main extends React.Component {
                 </ul>
               </td>
             </tr>
-{/* タイトル7 */}
-            <tr>
-              <td>
-              2019/6
-              ~2019/6
-              </td>
-              <td>簡易退職者予測モジュール</td>
-              <td>
-              <ul style={{margin: 0,listStyle:"none" }}>
-              <li>
-              機械学習を使った簡易な退職者予想モデルの作成
-              </li>
-              <li>
-              開発と実装
-              </li>
-              </ul>
-              </td>
-              <td>
-                <ul style={{margin: 0,listStyle:"none" }}>
-                  <li>
-                    python
-                  </li>
-                  <li>
-                    sklearn
-                  </li>
-                  <li>
-                    pandas
-                  </li>
-                  <li>
-                    matplotlib
-                  </li>
-                  <li>
-                    numpy
-                  </li>
-                  <li>
-                    keras
-                  </li>
-                  <li>
-                    tensorflow
-                  </li>
-                </ul>
-              </td>
-            </tr>
-  {/* タイトル8 */}
+  {/* タイトル7 */}
             <tr>
               <td>
               2019/7
@@ -354,7 +311,7 @@ class Main extends React.Component {
                 </ul>
               </td>
             </tr>
-  {/* タイトル9 */}
+  {/* タイトル8 */}
             <tr>
               <td>
               2019/8
@@ -379,7 +336,7 @@ class Main extends React.Component {
                 </ul>
               </td>
             </tr>
-  {/* タイトル10 */}
+  {/* タイトル9 */}
             <tr>
               <td>
               2019/9
@@ -407,7 +364,7 @@ class Main extends React.Component {
                 </ul>
               </td>
             </tr>
-  {/* タイトル11 */}
+  {/* タイトル10 */}
             <tr>
               <td>
               2019/10
@@ -429,7 +386,7 @@ class Main extends React.Component {
                 </ul>
               </td>
             </tr>
-  {/* タイトル12 */}
+  {/* タイトル11 */}
             <tr>
               <td>
               2020/4
