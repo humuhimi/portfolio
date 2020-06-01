@@ -539,8 +539,7 @@ class Main extends React.Component {
               </a>
             </li>
           </ul>
-          <form method="post" netlify-honeypot="bot-field" data-netlify="true" netlify>
-            <input type="hidden" name="bot-field" />
+          <form method="post" action="https://formspree.io/xyynwzye" enctype="multipart/form-data">
             <div className="field half first">
               <label htmlFor="name">お名前</label>
               <input type="text" name="name" id="name" />
