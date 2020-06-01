@@ -35,11 +35,12 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'humuhimi-web-site',
+        description:"サイバー大学4年生のふむひみが英語・中国語・プログラミング言語を使った生活を垂れ流すサイト",
         short_name: 'ふむひみサイト',
         start_url: '/',
         background_color: '#4db6ac',
         theme_color: '#18ffff',
-        display: 'minimal-ui',
+        display: 'standalone',
         icon: 'src/images/humuhimi.png', // This path is relative to the root of the site.
       },
     },
