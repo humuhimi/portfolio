@@ -540,13 +540,14 @@ class Main extends React.Component {
             </li>
           </ul>
           <form method="post" action="https://formspree.io/xyynwzye" enctype="multipart/form-data">
+            <input type="text" name="_gotcha" style="display:none" />
             <div className="field half first">
               <label htmlFor="name">お名前</label>
               <input type="text" name="name" id="name" />
             </div>
             <div className="field half">
               <label htmlFor="email">メールアドレス</label>
-              <input type="text" name="email" id="email" />
+              <input type="text" name="_replyto" id="email" />
             </div>
             <div className="field">
               <label htmlFor="message">ご用件</label>
