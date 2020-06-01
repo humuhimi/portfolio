@@ -93,6 +93,15 @@ h6 {
     padding-bottom: 0.5rem;
     margin: 0 0 (_size(element-margin) * 1) 0;
   }
+  &.sub {
+    border-bottom: dashed _size(border-width) _palette(border);
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    width: -ms-max-content;
+    width: max-content;
+    padding-bottom: 0.5rem;
+    margin: 0 0 (_size(element-margin) * 1) 0;
+  }
 }
 
 h1 {

@@ -5,7 +5,12 @@ import introPic from '../images/my_chara.png';
 import History from '../images/history.jpg'
 import pic03 from '../images/pic03.jpg'
 import FaceIcon from '../images/face.jpg';
-import FaceIcon2 from '../images/face2.jpg';
+import OtherIcon from '../images/others.jpg';
+
+import AccessibleForwardIcon from '@material-ui/icons/AccessibleForward';
+import GradeIcon from '@material-ui/icons/Grade';
+import FlightTakeoffIcon from '@material-ui/icons/FlightTakeoff';
+import WhatshotIcon from '@material-ui/icons/Whatshot';
 
 
 import { Link } from 'gatsby';
@@ -540,7 +545,6 @@ class Main extends React.Component {
             </li>
           </ul>
           <form method="post" action="https://formspree.io/xyynwzye" enctype="multipart/form-data">
-            <input type="text" name="_gotcha" style="display:none" />
             <div className="field half first">
               <label htmlFor="name">お名前</label>
               <input type="text" name="name" id="name" />
@@ -573,11 +577,59 @@ class Main extends React.Component {
         >
           <h2 className="major">その他</h2>
           <span className="image main">
-            <img src={pic03} alt="" />
+            <img src={OtherIcon} alt="" />
           </span>
-          <p>
-          その他のことに関してブラブラブラブラ
-          </p>
+          {/* ボランティアリスト */}
+          <h3 className="sub"><AccessibleForwardIcon style={{color : "green", background:"white",borderRadius:"50%",padding:1 }} /> ボランティアリスト(6月分)</h3>
+          <div style={{border : "dashed",margin:"10px 10px 30px 10px",fontSize:"0.9rem" }}> 
+            <section style={{ margin:"10px" }}>
+          <p>今月中無料でボランティアしちゃうリスト</p>
+          <ul>
+            <li>中国旅行無料ツアーガイド</li>
+            <li>簡易的な中国のIT市場調査</li>
+            <li>鬱とか精神病の悩み相談</li>
+          </ul>
+          </section>
+          </div>
+          {/* 欲しいものリスト */}
+          <h3 className="sub"><GradeIcon style={{color : "#ffcd3c", background:"white",borderRadius:"50%",padding:1 }} /> 欲しいものリスト</h3>
+          <div style={{border : "dashed",margin:"10px 10px 30px 10px",fontSize:"0.9rem" }}> 
+            <section style={{ margin:"10px" }}>
+          <p>現在中国なので休止中っ！！</p>
+          </section>
+          </div>
+          {/* バケットリスト */}
+          <h3 className="sub"><FlightTakeoffIcon style={{color : "#03a9f4", background:"white",borderRadius:"50%",padding:1 }} /> 人生バケットリスト</h3>
+          <div style={{border : "dashed",margin:"10px 10px 30px 10px",fontSize:"0.9rem" }}> 
+            <section style={{ margin:"10px" }}>
+          <p>人生のバケットリストはこんな感じ</p>
+          <ul>
+            <li>世界旅行で友達を作り、地味な海外の公園でホームレスする</li>
+            <li>デザインセンスゼロやけどストリートアートを作る</li>
+            <li>日本の温泉を制覇するそんで外国人に紹介しまくる！</li>
+            <li>恋愛をいっぱいする！国とか関係なく</li>
+            <li>オーロラみながら、酒飲みまくる</li>
+            <li>自動運転の改造車乗って日本や世界でフルリモートで仕事する</li>
+          </ul>
+          </section>
+          </div>
+          {/* 成し遂げたいリスト */}
+          <h3 className="sub"><WhatshotIcon style={{color : "#f44336", background:"white",borderRadius:"50%",padding:1 }} /> 成し遂げたいリスト</h3>
+          <div style={{border : "dashed",margin:"10px 10px 30px 10px",fontSize:"0.9rem" }}> 
+            <section style={{ margin:"10px" }}>
+          <p>自分の人生で成し遂げたいリスト</p>
+          <p>20代のうちに成し遂げたいなあ~</p>
+          <ul>
+            <li>フルリモートOKな多国籍な企業を作る</li>
+            <li>AIを使った歌を作る</li>
+            <li>githubで一年連続草を生やし続ける</li>
+            <li>ハードウェアからソフトウェアまで全て一貫して開発してみたい</li>
+            <li>ハードソフト関係なく、中国のITのコピー製品を量産しまくりたい</li>
+            <li>社会実装で世の中の不条理を消し去りたい</li>
+            <li>精神病をサポートするアプリを作りたい</li>
+          </ul>
+          </section>
+          </div>
           {close}
         </article>
       </div>
