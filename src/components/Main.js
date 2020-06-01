@@ -539,7 +539,7 @@ class Main extends React.Component {
               </a>
             </li>
           </ul>
-          <form method="post" netlify-honeypot="bot-field" data-netlify="true">
+          <form method="post" netlify-honeypot="bot-field" data-netlify="true" netlify>
             <input type="hidden" name="bot-field" />
             <div className="field half first">
               <label htmlFor="name">お名前</label>
