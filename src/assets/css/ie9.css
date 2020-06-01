@@ -14,7 +14,12 @@
 
 #header .logo {
   margin: 0 auto;
+  max-width: 100%;
 }
+#header .logo img {
+  max-width: 20px;
+}
+
 
 #header .content {
   display: inline-block;
