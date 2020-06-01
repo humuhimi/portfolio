@@ -539,7 +539,8 @@ class Main extends React.Component {
               </a>
             </li>
           </ul>
-          <form method="post" action="mailto:	exit0jap1masaya2@gmail.com?Subject=ふむひみサイトから来た！">
+          <form method="post" netlify-honeypot="bot-field" data-netlify="true">
+            <input type="hidden" name="bot-field" />
             <div className="field half first">
               <label htmlFor="name">お名前</label>
               <input type="text" name="name" id="name" />
