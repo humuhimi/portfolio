@@ -1,15 +1,12 @@
-// hatena blog json作成
-const createHatenaJson = require('./createHatena.js');
-console.log(createHatenaJson);
-
-
 const path = require('path');
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
   return new Promise((resolve, reject) => {
-    const postTemplate = path.resolve('src/templates/post.jsx');
+    // hatena blog json作成
+      const createHatenaJson = require('./createHatena.js');
+      console.log(createHatenaJson);
 
     resolve(
       graphql(

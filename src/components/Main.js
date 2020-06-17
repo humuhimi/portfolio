@@ -520,7 +520,9 @@ class Main extends React.Component {
             { data.allHatenaJson.edges.map(({ node },index)=>{
               const { day,title,href,imgurl } = node;
               return(
-                <BlogCard imgurl={imgurl} day={day} title={title} Component='a' href={href} />
+                <a href={href}>
+                <BlogCard imgurl={imgurl} day={day} title={title}/>
+                </a>
               )
             }) }
             </div>)}
