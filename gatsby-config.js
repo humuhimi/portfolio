@@ -6,30 +6,15 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    `gatsby-transformer-json`,
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'contents',
-        path: `${__dirname}/contents/`,
+        name:'json',
+        path: `${__dirname}/json/`,
       },
     },
     'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 750,
-              quality: 90,
-              linkImagesToOriginal: true,
-            },
-          },
-        ],
-      },
-    },
     'gatsby-plugin-sharp',
     {
       resolve: `gatsby-plugin-manifest`,

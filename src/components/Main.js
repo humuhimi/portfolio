@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
+import hatenaImg from '../images/hatena.png'
 import introPic from '../images/my_chara.png';
 import History from '../images/history.jpg'
 import pic03 from '../images/pic03.jpg'
@@ -11,9 +11,9 @@ import AccessibleForwardIcon from '@material-ui/icons/AccessibleForward';
 import GradeIcon from '@material-ui/icons/Grade';
 import FlightTakeoffIcon from '@material-ui/icons/FlightTakeoff';
 import WhatshotIcon from '@material-ui/icons/Whatshot';
+import { StaticQuery, graphql,Link } from "gatsby"
 
-
-import { Link } from 'gatsby';
+import BlogCard from './blogCard';
 
 class Main extends React.Component {
   render() {
@@ -25,7 +25,6 @@ class Main extends React.Component {
         }}
       ></div>
     )
-
     return (
       <div
         ref={this.props.setWrapperRef}
@@ -496,16 +495,39 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">ブログ</h2>
+          <h2 className="major">my hatena ブログ</h2>
           <span className="image main">
-            <img src={pic03} alt="" />
+            <img src={hatenaImg} alt="はてなブログ画像" />
           </span>
-          <p>
-          SPAでページ内部にコンテンツ配置するようにする
-          </p>
-          <Link to="/blog">もっと見る</Link>
+          <StaticQuery
+                query={
+                  graphql`
+                  query {
+            allHatenaJson {
+              edges {
+                node {
+                  day
+                  href
+                  id
+                  imgurl
+                  title
+                }
+              }
+            }
+                }`}
+          render={data =>(
+            <div style={{paddingBottom:"20px" }}>
+            { data.allHatenaJson.edges.map(({ node },index)=>{
+              const { day,title,href,imgurl } = node;
+              return(
+                <BlogCard imgurl={imgurl} day={day} title={title} Component='a' href={href} />
+              )
+            }) }
+            </div>)}
+          />
           {close}
         </article>
+
 
         <article
           id="contact"
