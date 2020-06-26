@@ -17,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     backgroundColor: '#01579b',
-    marginBottom:20,
+    marginBottom:30,
+    boxShadow: '0px 0px 20px #04e6fd',
   },
   details: {
     display: 'flex',
