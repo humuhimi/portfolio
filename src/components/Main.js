@@ -480,9 +480,9 @@ class Main extends React.Component {
           <span className="image main">
             <img src={workPic} alt="作品" />
           </span>
-          <p>
+          <b>
           僕が作った作品について
-          </p>
+          </b>
           <PostList
               key={1}
               cover={ArPic}

@@ -1,11 +1,62 @@
 module.exports = {
   siteMetadata: {
-    title: 'ふむひみのサイト',
+    title: 'ふむひみサイト',
+    titleAlt:'ふむひみウェブサイト',
+    siteUrl: 'https://humuhimi.com/',
+    url:'https://humuhimi.com',
+    siteLanguage: 'ja', 
+    pathPrefix: '/',
     author: 'humuhimi',
+    keyword:'海外移住,日本脱出,サイバー大学,ふむひみ',
     description: 'ふむひみが日々の生活をアウトプットするサイト',
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        query: `
+        {
+          allSite {
+            edges {
+              node {
+                siteMetadata {
+                  url
+                  siteUrl
+                }
+              }
+            }
+          }
+            allSitePage {
+              nodes {
+                path
+              }
+            }
+        }`,
+        serialize: ({ allSite, allSitePage }) =>
+          allSitePage.nodes.map(node => {
+            return {
+              url: `${allSite.edges.node.siteMetadata.siteUrl}${node.path}`,
+              changefreq: `daily`,
+              priority: 0.7,
+            }
+          })
+        }
+      },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://humuhimi.com',
+        sitemap: 'https://humuhimi.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    }, 
     'gatsby-plugin-react-helmet',
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: 'https://humuhimi.com',
+      }
+    },
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -19,7 +70,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'humuhimi-web-site',
+        name: 'ふむひみウェブサイト',
         description:"サイバー大学4年生のふむひみが英語・中国語・プログラミング言語を使った生活を垂れ流すサイト",
         short_name: 'ふむひみサイト',
         start_url: '/',
