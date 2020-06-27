@@ -3,7 +3,10 @@ import React from 'react'
 import hatenaImg from '../images/hatena.png'
 import introPic from '../images/my_chara.png';
 import History from '../images/history.jpg'
-import pic03 from '../images/pic03.jpg'
+import workPic from '../images/work.png';
+import ArPic from '../images/arapp.png';
+import DeepLearningPic from '../images/deeplearning.png';
+import PartyPic from '../images/party.png';
 import FaceIcon from '../images/face.jpg';
 import OtherIcon from '../images/others.jpg';
 
@@ -14,6 +17,8 @@ import WhatshotIcon from '@material-ui/icons/Whatshot';
 import { StaticQuery, graphql,Link } from "gatsby"
 
 import BlogCard from './blogCard';
+
+import PostList from './PostList';
 
 class Main extends React.Component {
   render() {
@@ -473,18 +478,35 @@ class Main extends React.Component {
         >
           <h2 className="major">作品</h2>
           <span className="image main">
-            <img src={pic03} alt="作品" />
+            <img src={workPic} alt="作品" />
           </span>
           <p>
           僕が作った作品について
           </p>
-          <p>
-          僕の作品はブラブラブラブラブラ
-          ブラブラブラブラブラブラブラブラブラブラブラブラブラブラブラ
-          ブラブラブラブラブラ
-          ブラブラブラブラブラ
-          ブラブラブラブラブラ
-          </p>
+          <PostList
+              key={1}
+              cover={ArPic}
+              path={'/'}
+              title={'ARアプリ'}
+              date={'2019/9'}
+              excerpt={'家の画像を読み込むと全裸の変態が歌に合わせて踊ります'}
+            />
+          <PostList
+              key={2}
+              cover={DeepLearningPic}
+              path={'/'}
+              title={'ディープラーニングしてみた'}
+              date={'2019/8'}
+              excerpt={'データを使って映画のレビューから映画に対して肯定的な意見か否定的な意見かを判定し予測するモデルを作る'}
+            />
+          <PostList
+              key={3}
+              cover={PartyPic}
+              path={'/'}
+              title={'婚活イベント配信サイト'}
+              date={'2020/6'}
+              excerpt={'婚活コンテンツ配信の婚活サイト作ってみた'}
+            />
           {close}
         </article>
 
