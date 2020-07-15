@@ -16,15 +16,11 @@ module.exports = {
       options: {
         query: `
         {
-          allSite {
-            edges {
-              node {
+          site {
                 siteMetadata {
                   url
                   siteUrl
                 }
-              }
-            }
           }
             allSitePage {
               nodes {
@@ -32,10 +28,10 @@ module.exports = {
               }
             }
         }`,
-        serialize: ({ allSite, allSitePage }) =>
+        serialize: ({ site, allSitePage }) =>
           allSitePage.nodes.map(node => {
             return {
-              url: `${allSite.edges.node.siteMetadata.siteUrl}${node.path}`,
+              url: `${site.siteMetadata.siteUrl}${node.path}`,
               changefreq: `daily`,
               priority: 0.7,
             }
