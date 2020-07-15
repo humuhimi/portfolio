@@ -24,6 +24,7 @@ const Wrapper = styled.div`
   }
 
   @media (max-width: 700px) {
+    left:0;
     flex-basis: 100%;
     max-width: 100%;
     width: 100%;
