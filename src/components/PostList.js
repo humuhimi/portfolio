@@ -6,26 +6,20 @@ import PropTypes from 'prop-types';
 const Wrapper = styled.div`
   margin-bottom: 2rem;
   position: relative;
+  left:15%;
   z-index: 100;
   border-radius: 0.4rem;
   box-shadow: 0 0px 25px white;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  height: 17rem;
-  flex-basis: calc(99.9% * 1 / 3 - 1rem);
-  max-width: calc(99.9% * 1 / 3 - 1rem);
-  width: calc(99.9% * 1 / 3 - 1rem);
   background-image:url(${ props=>props.url });
   background-size:contain;
-  
   &:hover {
     box-shadow: 0 0px 25px white;
     transform: scale(1.04);
   }
-
-  @media (max-width: 1000px) {
-    flex-basis: calc(99.9% * 1 / 2 - 1rem);
-    max-width: calc(99.9% * 1 / 2 - 1rem);
-    width: calc(99.9% * 1 / 2 - 1rem);
+    flex-basis: 70%;
+    max-width: 70%;
+    width: 70%;
     height: 18rem;
   }
 
