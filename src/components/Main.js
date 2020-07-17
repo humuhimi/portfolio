@@ -31,7 +31,7 @@ class Main extends React.Component {
     )
     return (
       <div
-        ref={this.props.setWrapperRef}
+        ref={this.props.wrapperRef}
         id="main"
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
