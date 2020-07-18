@@ -80,6 +80,6 @@ export default OthersArticle;
 OthersArticle.propTypes = {
     article : PropTypes.string.isRequired,
     articleTimeout : PropTypes.bool.isRequired,
-    otherSrc: PropTypes.string.isRequired,
+    otherSrc: PropTypes.object.isRequired,
     close : PropTypes.element.isRequired,
 };

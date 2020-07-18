@@ -19,8 +19,8 @@ const Main = (props) => {
     hatenaImg : file(relativePath: {eq: "hatena.png"}) {
       childImageSharp {
           fluid(
-            maxWidth:1200,
-            quality:100
+            maxWidth:800,
+            quality:80
           ){
             ...GatsbyImageSharpFluid_noBase64
           }
@@ -30,8 +30,8 @@ const Main = (props) => {
     introPic : file(relativePath: {eq: "my_chara.png"}) {
       childImageSharp {
           fluid(
-            maxWidth:1200,
-            quality:100
+            maxWidth:800,
+            quality:80
           ){
             ...GatsbyImageSharpFluid_noBase64
           }
@@ -41,8 +41,8 @@ const Main = (props) => {
     HistoryPic : file(relativePath: {eq: "history.jpg"}) {
       childImageSharp {
           fluid(
-            maxWidth:1200,
-            quality:100
+            maxWidth:800,
+            quality:80
           ){
             ...GatsbyImageSharpFluid_noBase64
           }
@@ -51,8 +51,8 @@ const Main = (props) => {
     workPic : file(relativePath: {eq: "work.png"}) {
       childImageSharp {
           fluid(
-            maxWidth:1200,
-            quality:100
+            maxWidth:800,
+            quality:80
           ){
             ...GatsbyImageSharpFluid_noBase64
           }
@@ -61,8 +61,8 @@ const Main = (props) => {
     faceIcon : file(relativePath: {eq: "face.jpg"}) {
       childImageSharp {
           fluid(
-            maxWidth:1200,
-            quality:100
+            maxWidth:800,
+            quality:80
           ){
             ...GatsbyImageSharpFluid_noBase64
           }
@@ -71,8 +71,8 @@ const Main = (props) => {
     otherIcon : file(relativePath: {eq: "others.jpg"}) {
       childImageSharp {
           fluid(
-            maxWidth:1200,
-            quality:100
+            maxWidth:800,
+            quality:80
           ){
             ...GatsbyImageSharpFluid_noBase64
           }
@@ -129,7 +129,6 @@ Main.propTypes = {
   onCloseArticle: PropTypes.func.isRequired,
   timeout: PropTypes.bool.isRequired,
   wrapperRef: PropTypes.object.isRequired,
-  // imgData 
 }
 
 export default Main

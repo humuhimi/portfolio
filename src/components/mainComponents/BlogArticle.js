@@ -56,6 +56,6 @@ export default BlogArticle;
 BlogArticle.propTypes = {
     article : PropTypes.string.isRequired,
     articleTimeout : PropTypes.bool.isRequired,
-    hatenaSrc : PropTypes.string.isRequired,
+    hatenaSrc : PropTypes.object.isRequired,
     close : PropTypes.element.isRequired,
 };

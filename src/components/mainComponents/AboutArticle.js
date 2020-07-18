@@ -60,8 +60,8 @@ export default AboutArticle;
 AboutArticle.propTypes = {
     article : PropTypes.string.isRequired,
     articleTimeout : PropTypes.bool.isRequired,
-    topSrc : PropTypes.string.isRequired,
-    faceSrc : PropTypes.string.isRequired,
+    topSrc : PropTypes.object.isRequired,
+    faceSrc : PropTypes.object.isRequired,
     close : PropTypes.element.isRequired,
 };
 

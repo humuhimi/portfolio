@@ -16,6 +16,7 @@ const HistoryArticle = ({ article,articleTimeout,historySrc,close }) => (
     </span>
     <table className="table main">
      <tbody>
+     
      {/* 先頭 */}
      <tr className="table main tbody tr">
         <th>期間</th>
@@ -23,6 +24,7 @@ const HistoryArticle = ({ article,articleTimeout,historySrc,close }) => (
         <th>職務</th>
         <th>言語orツール</th>
       </tr>
+
       {/* タイトル1 */}
       <tr>
         <td>
@@ -347,6 +349,43 @@ const HistoryArticle = ({ article,articleTimeout,historySrc,close }) => (
           </ul>
         </td>
       </tr>
+{/* タイトル12 */}
+      <tr>
+        <td>
+        2020/6
+        ~2020/8
+        </td>
+        <td>オンやる(サイバー大学企画開発)</td>
+        <td>
+        <ul style={{margin: 0,listStyle:"none" }}>
+        <li>
+        ホームページのPWA化・アドベントカレンダーページ作成やmaxcut数学問題を量子PCと古典PCで解決し、比較する
+        </li>
+        <li>
+        実装
+        </li>
+        </ul>
+        </td>
+        <td>
+          <ul style={{margin: 0,listStyle:"none" }}>
+            <li>
+              Javascript
+            </li>
+            <li>
+              bootstrap
+            </li>
+            <li>
+              node.js
+            </li>
+            <li>
+              python
+            </li>
+            <li>
+              d-wave
+            </li>
+          </ul>
+        </td>
+      </tr>
      </tbody>
     </table>
 
@@ -389,7 +428,7 @@ export default HistoryArticle;
 HistoryArticle.propTypes = {
     article : PropTypes.string.isRequired,
     articleTimeout : PropTypes.bool.isRequired,
-    historySrc : PropTypes.string.isRequired,
+    historySrc : PropTypes.object.isRequired,
     close : PropTypes.element.isRequired,
 };
 

@@ -95,7 +95,7 @@ const PostList = ({ cover, path, date, title, excerpt }) => (
 export default PostList;
 
 PostList.propTypes = {
-  cover: PropTypes.object.isRequired,
+  cover: PropTypes.string.isRequired,
   path: PropTypes.string.isRequired,
   excerpt: PropTypes.string,
   date: PropTypes.string.isRequired,
