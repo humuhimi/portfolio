@@ -7,7 +7,6 @@ exports.createPages = ({ graphql, actions }) => {
     // hatena blog json作成
       const createHatenaJson = require('./createHatena.js');
       console.log(createHatenaJson);
-
     resolve(
       graphql(
         `

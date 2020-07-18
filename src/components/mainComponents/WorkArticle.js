@@ -2,16 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import PostList from '../PostList';
 
-import { graphql } from "gatsby";
-import Img from "gatsby-image";
-
-
-
 import ArPic from '../../images/arapp.png';
 import DeepLearningPic from '../../images/deeplearning.png';
 import PartyPic from '../../images/party.png';
 
-// props→Cover後でたす
 const WorkArticle = ({ article,articleTimeout,workSrc,close }) => (
     <article
     id="work"

@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from "gatsby"
 import BlogCard from '../blogCard';
+import Img from 'gatsby-image';
 
 const BlogArticle = ({ article,articleTimeout,hatenaSrc,close }) => (
 
@@ -14,7 +15,7 @@ const BlogArticle = ({ article,articleTimeout,hatenaSrc,close }) => (
   >
     <h2 className="major">my hatena ブログ</h2>
     <span className="image main">
-      <img src={hatenaSrc} alt="はてなブログ画像" />
+      <Img fluid={hatenaSrc} alt="はてなブログ画像" />
     </span>
     <StaticQuery
           query={

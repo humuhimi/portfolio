@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
+import Img from "gatsby-image";
 
 const Wrapper = styled.div`
   margin-bottom: 2rem;

@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Img from 'gatsby-image';
 
 import AccessibleForwardIcon from '@material-ui/icons/AccessibleForward';
 import GradeIcon from '@material-ui/icons/Grade';
@@ -16,7 +17,7 @@ const OthersArticle = ({ article,articleTimeout,otherSrc,close }) => (
   >
     <h2 className="major">その他</h2>
     <span className="image main">
-      <img src={otherSrc} alt="" />
+      <Img fluid={otherSrc} alt="その他項目のトップ画像" />
     </span>
     {/* ボランティアリスト */}
     <h3 className="sub"><AccessibleForwardIcon style={{color : "green", background:"white",borderRadius:"50%",padding:1 }} /> ボランティアリスト(6月分)</h3>
