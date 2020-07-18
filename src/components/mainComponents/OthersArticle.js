@@ -20,12 +20,12 @@ const OthersArticle = ({ article,articleTimeout,otherSrc,close }) => (
       <Img fluid={otherSrc} alt="その他項目のトップ画像" />
     </span>
     {/* ボランティアリスト */}
-    <h3 className="sub"><AccessibleForwardIcon style={{color : "green", background:"white",borderRadius:"50%",padding:1 }} /> ボランティアリスト(6月分)</h3>
+    <h3 className="sub"><AccessibleForwardIcon style={{color : "green", background:"white",borderRadius:"50%",padding:1 }} /> ボランティアリスト(7月分)</h3>
     <div style={{border : "dashed",margin:"10px 10px 30px 10px",fontSize:"0.9rem" }}> 
       <section style={{ margin:"10px" }}>
     <p>今月中無料でボランティアしちゃうリスト</p>
     <ul>
-      <li>中国旅行無料ツアーガイド</li>
+      <li>中国旅行(福州)無料ツアーガイド</li>
       <li>簡易的な中国のIT市場調査</li>
       <li>鬱とか精神病の悩み相談</li>
     </ul>
