@@ -12,7 +12,6 @@ const IndexPage =(props) => {
   const [loading,setLoading] = useState('is-loading');
 
   const wrapperRef = useRef(null);
-
   useEffect(()=>{
     const timeoutId = setTimeout(()=>{
       setLoading("");
@@ -20,7 +19,6 @@ const IndexPage =(props) => {
 
     document.addEventListener('mousedown',handleClickOutside);
     return () => {
-      // 
       if (timeoutId) {
         clearTimeout(timeoutId);
       }
