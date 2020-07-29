@@ -58,7 +58,7 @@ const Main = (props) => {
           }
       }
     }
-    faceIcon : file(relativePath: {eq: "face.jpg"}) {
+    faceIcon : file(relativePath: {eq: "face.png"}) {
       childImageSharp {
           fluid(
             maxWidth:800,
