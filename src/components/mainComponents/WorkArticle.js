@@ -5,7 +5,7 @@ import PostList from '../PostList';
 import ArPic from '../../images/arapp.png';
 import DeepLearningPic from '../../images/deeplearning.png';
 import PartyPic from '../../images/party.png';
-import Img from 'gatsby-image';
+
 
 const WorkArticle = ({ article,articleTimeout,workSrc,close }) =>{
 
@@ -23,7 +23,7 @@ const WorkArticle = ({ article,articleTimeout,workSrc,close }) =>{
   >
     <h2 className="major">作品</h2>
     <span className="image main">
-      <Img fluid={workSrc} alt="作品" />
+      <img src={workSrc} alt="作品" />
     </span>
     <div style={{textAlign: "center"}}>
 

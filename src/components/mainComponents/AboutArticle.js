@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Img from 'gatsby-image';
 
 const AboutArticle = ({article,articleTimeout,topSrc,faceSrc,close}) =>(
     <article
@@ -12,7 +11,7 @@ const AboutArticle = ({article,articleTimeout,topSrc,faceSrc,close}) =>(
       >
         <h2 className="major">プロフィール</h2>
         <span className="image main">
-          <Img fluid={topSrc} alt="about me" />
+          <img src={topSrc} alt="about me" />
         </span>
         <p>ようこそ僕のサイトへ</p>
         <p>はじめましてふむひみです</p>
@@ -38,7 +37,7 @@ const AboutArticle = ({article,articleTimeout,topSrc,faceSrc,close}) =>(
         <p>お仕事あればお気楽に連絡ください！</p>
 
         <p>最後まで読んでいただきありがとうございました!</p>
-        <Img fluid={faceSrc} alt="face icon" className="face main"/>
+        <img src={faceSrc} alt="face icon" className="face main"/>
         <br />
         <p style={{position:"relative",textAlign:"center",marginTop:"1rem"}}>ふむひみ本人</p>
         {close}

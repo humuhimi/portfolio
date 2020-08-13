@@ -1,9 +1,13 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { useStaticQuery, graphql } from "gatsby";
 
 import { AboutArticle,HistoryArticle,WorkArticle,BlogArticle,ContactArticle,OthersArticle } from './mainComponents';
-
+import hatenaImg from "../images/hatena.png";
+import introPic from "../images/my_chara.png";
+import historyPic from "../images/history.jpg";
+import workPic from "../images/work.png";
+import faceIcon from "../images/face.png";
+import otherIcon from "../images/others.jpg";
 
 const Main = (props) => {
   let close = (
@@ -14,71 +18,7 @@ const Main = (props) => {
       }}
     ></div>
   );
-  const data = useStaticQuery(graphql`
-  query{
-    hatenaImg : file(relativePath: {eq: "hatena.png"}) {
-      childImageSharp {
-          fluid(
-            maxWidth:800,
-            quality:80
-          ){
-            ...GatsbyImageSharpFluid_noBase64
-          }
-      }
-    }
 
-    introPic : file(relativePath: {eq: "my_chara.png"}) {
-      childImageSharp {
-          fluid(
-            maxWidth:800,
-            quality:80
-          ){
-            ...GatsbyImageSharpFluid_noBase64
-          }
-      }
-    }
-
-    HistoryPic : file(relativePath: {eq: "history.jpg"}) {
-      childImageSharp {
-          fluid(
-            maxWidth:800,
-            quality:80
-          ){
-            ...GatsbyImageSharpFluid_noBase64
-          }
-      }
-    }
-    workPic : file(relativePath: {eq: "work.png"}) {
-      childImageSharp {
-          fluid(
-            maxWidth:800,
-            quality:80
-          ){
-            ...GatsbyImageSharpFluid_noBase64
-          }
-      }
-    }
-    faceIcon : file(relativePath: {eq: "face.png"}) {
-      childImageSharp {
-          fluid(
-            maxWidth:800,
-            quality:80
-          ){
-            ...GatsbyImageSharpFluid_noBase64
-          }
-      }
-    }
-    otherIcon : file(relativePath: {eq: "others.jpg"}) {
-      childImageSharp {
-          fluid(
-            maxWidth:800,
-            quality:80
-          ){
-            ...GatsbyImageSharpFluid_noBase64
-          }
-      }
-    }
-  }`);
   return (
     <div
       ref={props.wrapperRef}
@@ -87,24 +27,24 @@ const Main = (props) => {
     >
       <AboutArticle article={props.article} 
                     articleTimeout={props.articleTimeout} 
-                    topSrc={data.introPic.childImageSharp.fluid} 
-                    faceSrc={data.faceIcon.childImageSharp.fluid} 
+                    topSrc={introPic} 
+                    faceSrc={faceIcon} 
                     close={close} />
 
       <HistoryArticle article={props.article}
                       articleTimeout={props.articleTimeout}
-                      historySrc={data.HistoryPic.childImageSharp.fluid}
+                      historySrc={historyPic}
                       close={close} />            
                       
       <WorkArticle article={props.article}
                     articleTimeout={props.articleTimeout} 
-                    workSrc={data.workPic.childImageSharp.fluid}
+                    workSrc={workPic}
                     close={close} 
                     />
 
       <BlogArticle article={props.article}
                    articleTimeout={props.articleTimeout}
-                   hatenaSrc={data.hatenaImg.childImageSharp.fluid}
+                   hatenaSrc={hatenaImg}
                    close={close}
                    />
       
@@ -115,7 +55,7 @@ const Main = (props) => {
 
       <OthersArticle article={props.article}
                    articleTimeout={props.articleTimeout}
-                   otherSrc={data.otherIcon.childImageSharp.fluid}
+                   otherSrc={otherIcon}
                    close={close}
                    />
     </div>

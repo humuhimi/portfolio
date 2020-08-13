@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Img from 'gatsby-image';
+
 
 const HistoryArticle = ({ article,articleTimeout,historySrc,close }) => (
     <article
@@ -12,7 +12,7 @@ const HistoryArticle = ({ article,articleTimeout,historySrc,close }) => (
   >
     <h2 className="major">経歴</h2>
     <span className="image main">
-      <Img fluid={historySrc} alt="経歴" />
+      <img src={historySrc} alt="経歴" />
     </span>
     <table className="table main">
      <tbody>
