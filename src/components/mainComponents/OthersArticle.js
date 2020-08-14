@@ -20,7 +20,7 @@ const OthersArticle = ({ article,articleTimeout,otherSrc,close }) => (
       <img src={otherSrc} alt="その他項目のトップ画像" />
     </span>
     {/* ボランティアリスト */}
-    <h3 className="sub"><AccessibleForwardIcon style={{color : "green", background:"white",borderRadius:"50%",padding:1 }} /> ボランティアリスト(88月分)</h3>
+    <h3 className="sub"><AccessibleForwardIcon style={{color : "green", background:"white",borderRadius:"50%",padding:1 }} /> ボランティアリスト(8月分)</h3>
     <div style={{border : "dashed",margin:"10px 10px 30px 10px",fontSize:"0.9rem" }}> 
       <section style={{ margin:"10px" }}>
     <p>今月中無料でボランティアしちゃうリスト</p>
