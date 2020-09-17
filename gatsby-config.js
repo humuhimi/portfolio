@@ -85,5 +85,6 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-sass',
+    `gatsby-plugin-i18n`,
   ],
 }

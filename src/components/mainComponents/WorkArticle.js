@@ -12,7 +12,7 @@ import QuantumPic from "../../images/quantum_project.png";
 const WorkArticle = ({ article,articleTimeout,workSrc,close }) =>{
 
   const workArray = [
-                    {key:"a1",cover:ArPic,path:"/",title:"ARアプリ",date:"2019/9",excerpt:'家の画像を読み込むと全裸の変態が歌に合わせて踊ります'},
+                    {key:"a1",cover:ArPic,path:"https://www.youtube.com/watch?v=KQJ4jPQd6E0",title:"ARアプリ",date:"2019/9",excerpt:'家の画像を読み込むと全裸の変態が歌に合わせて踊ります'},
                     {key:"dl1",cover:DeepLearningPic,path:"https://humuhimi.hatenablog.com/entry/2019/07/20/105934",title:"ディープラーニングしてみた",date:"2019/8",excerpt:'データを使って映画のレビューから映画に対して肯定的な意見か否定的な意見かを判定し予測するモデルを作る'},
                    {key:"pt1",cover:PartyPic,path:"https://smbc-party.com/",title:"婚活イベント配信サイト",date:"2020/6",excerpt:'婚活コンテンツ配信の婚活サイト作ってみた'},
                    {key:"adcal",cover:AdcalPic,path:"https://onyaru.com/adventcalender/",title:"アドベントカレンダー",date:"2020/7",excerpt:'サイバー大学のオンライン勉強会の自作アドベントカレンダー'},
