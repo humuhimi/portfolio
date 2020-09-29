@@ -7,6 +7,7 @@ import DeepLearningPic from '../../images/deeplearning.png';
 import PartyPic from '../../images/party.png';
 import AdcalPic from "../../images/adventcalender2.png";
 import QuantumPic from "../../images/quantum_project.png";
+import XilePic from "../../images/xileimage.png";
 
 
 const WorkArticle = ({ article,articleTimeout,workSrc,close }) =>{
@@ -17,6 +18,7 @@ const WorkArticle = ({ article,articleTimeout,workSrc,close }) =>{
                    {key:"pt1",cover:PartyPic,path:"https://smbc-party.com/",title:"婚活イベント配信サイト",date:"2020/6",excerpt:'婚活コンテンツ配信の婚活サイト作ってみた'},
                    {key:"adcal",cover:AdcalPic,path:"https://onyaru.com/adventcalender/",title:"アドベントカレンダー",date:"2020/7",excerpt:'サイバー大学のオンライン勉強会の自作アドベントカレンダー'},
                    {key:"quantum",cover:QuantumPic,path:"https://www.youtube.com/watch?v=hBMr_eCAydQ&feature=youtu.be",title:"量子コンピューターゆっくり実況",date:"2020/8",excerpt:'maxcut数学問題比較(従来型vs量子型)'},
+                   {key:"hkcook",cover:XilePic,path:"https://xilexiaodian-testsite.netlify.app/",title:"香港の料理店サイト",date:"2020/9",excerpt:'まだ作成途中'},
                     ];
   
   return (
