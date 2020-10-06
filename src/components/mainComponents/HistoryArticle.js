@@ -386,6 +386,45 @@ const HistoryArticle = ({ article,articleTimeout,historySrc,close }) => (
           </ul>
         </td>
       </tr>
+{/* タイトル13 */}
+      <tr>
+        <td>
+        2020/9~
+        </td>
+        <td>香港料理店サイト</td>
+        <td>
+        <ul style={{margin: 0,listStyle:"none" }}>
+        <li>
+        香港在住の知り合いのサイト開発
+        </li>
+        <li>
+        実装
+        </li>
+        </ul>
+        </td>
+        <td>
+          <ul style={{margin: 0,listStyle:"none" }}>
+            <li>
+              Javascript
+            </li>
+            <li>
+              bootstrap
+            </li>
+            <li>
+              node.js
+            </li>
+            <li>
+              React
+            </li>
+            <li>
+              Gatsby js
+            </li>
+            <li>
+              Contentful
+            </li>
+          </ul>
+        </td>
+      </tr>
      </tbody>
     </table>
 

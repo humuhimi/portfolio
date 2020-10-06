@@ -42,12 +42,12 @@ const Main = (props) => {
                     close={close} 
                     />
 
-      <BlogArticle article={props.article}
+      {/* <BlogArticle article={props.article}
                    articleTimeout={props.articleTimeout}
                    hatenaSrc={hatenaImg}
                    close={close}
                    />
-      
+       */}
       <ContactArticle article={props.article}
                    articleTimeout={props.articleTimeout}
                    close={close}
