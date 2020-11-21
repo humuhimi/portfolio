@@ -425,6 +425,36 @@ const HistoryArticle = ({ article,articleTimeout,historySrc,close }) => (
           </ul>
         </td>
       </tr>
+{/* タイトル14 */}
+      <tr>
+        <td>
+        2020/10~
+        </td>
+        <td>wechatアプリ開発</td>
+        <td>
+        <ul style={{margin: 0,listStyle:"none" }}>
+        <li>
+        日本語教師用のWeChatアプリ開発
+        </li>
+        <li>
+        実装、設計
+        </li>
+        </ul>
+        </td>
+        <td>
+          <ul style={{margin: 0,listStyle:"none" }}>
+            <li>
+              Javascript
+            </li>
+            <li>
+              wxml
+            </li>
+            <li>
+              wxss
+            </li>
+          </ul>
+        </td>
+      </tr>
      </tbody>
     </table>
 
