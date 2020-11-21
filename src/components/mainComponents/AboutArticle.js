@@ -31,7 +31,7 @@ const AboutArticle = ({article,articleTimeout,topSrc,faceSrc,close}) =>(
         <hr />
         <p>(趣味など)</p>
         <p>趣味は散歩と読書と国際交流とプログラミング</p>
-        <p>雑魚だけど、php,js,pythonで人生快適にできたらいいなと思う</p>
+        <p>雑魚だけど、php,js,pythonを使って人生快適にできたらいいなと思う</p>
         <p>最近は趣味でpython、仕事ではphp,jsを使ったウェブ開発してます</p>
         <hr />
         <p>お仕事あればお気楽に連絡ください！</p>
