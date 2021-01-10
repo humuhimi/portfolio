@@ -6,7 +6,7 @@ import hatenaImg from "../images/hatena.png";
 import introPic from "../images/my_chara.png";
 import historyPic from "../images/history.jpg";
 import workPic from "../images/work.png";
-import faceIcon from "../images/face.png";
+import faceIcon from "../images/humu_face.png";
 import otherIcon from "../images/others.jpg";
 
 const Main = (props) => {

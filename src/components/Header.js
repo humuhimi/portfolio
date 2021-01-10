@@ -9,9 +9,9 @@ const Header = (props) => (
     </div>
     <div className="content">
       <div className="inner">
-        <h1>humuhimi web</h1>
+        <h1>ふむひみの自己紹介サイト</h1>
         <p>
-        サイバー大学生4年生が外国語からプログラミング言語を使った海外生活を垂れ流すサイト
+        英語・中国語を学んで、海外フルリモートしてる引きこもりのサイト
         </p>
       </div>
     </div>

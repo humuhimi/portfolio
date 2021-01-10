@@ -455,6 +455,39 @@ const HistoryArticle = ({ article,articleTimeout,historySrc,close }) => (
           </ul>
         </td>
       </tr>
+{/* タイトル15 */}
+      <tr>
+        <td>
+        2020/11~
+        </td>
+        <td>CMS開発</td>
+        <td>
+        <ul style={{margin: 0,listStyle:"none" }}>
+        <li>
+        PHPを使ったCMSの開発
+        </li>
+        <li>
+        実装
+        </li>
+        </ul>
+        </td>
+        <td>
+          <ul style={{margin: 0,listStyle:"none" }}>
+            <li>
+              PHP
+            </li>
+            <li>
+              cakePHP
+            </li>
+            <li>
+              Javascript
+            </li>
+            <li>
+              Vue.js
+            </li>
+          </ul>
+        </td>
+      </tr>
      </tbody>
     </table>
 
