@@ -530,7 +530,7 @@ export default HistoryArticle;
 HistoryArticle.propTypes = {
     article : PropTypes.string.isRequired,
     articleTimeout : PropTypes.bool.isRequired,
-    historySrc : PropTypes.object.isRequired,
+    historySrc : PropTypes.string.isRequired,
     close : PropTypes.element.isRequired,
 };
 

@@ -38,7 +38,7 @@ const BlogArticle = ({ article,articleTimeout,hatenaSrc,close }) => (
       { data.allHatenaJson.edges.map(({ node },index)=>{
         const { day,title,href,imgurl } = node;
         return(
-          <a href={href}>
+          <a href={href} key={index}>
           <BlogCard imgurl={imgurl} day={day} title={title}/>
           </a>
         )
@@ -55,6 +55,6 @@ export default BlogArticle;
 BlogArticle.propTypes = {
     article : PropTypes.string.isRequired,
     articleTimeout : PropTypes.bool.isRequired,
-    hatenaSrc : PropTypes.object.isRequired,
+    hatenaSrc : PropTypes.string.isRequired,
     close : PropTypes.element.isRequired,
 };

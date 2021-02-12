@@ -57,6 +57,6 @@ export default WorkArticle;
 WorkArticle.propTypes = {
     article : PropTypes.string.isRequired,
     articleTimeout : PropTypes.bool.isRequired,
-    workSrc : PropTypes.object.isRequired,
+    workSrc : PropTypes.string.isRequired,
     close : PropTypes.element.isRequired,
 };

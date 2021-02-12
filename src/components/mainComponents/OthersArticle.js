@@ -20,7 +20,7 @@ const OthersArticle = ({ article,articleTimeout,otherSrc,close }) => (
       <img src={otherSrc} alt="その他項目のトップ画像" />
     </span>
     {/* ボランティアリスト */}
-    <h3 className="sub"><AccessibleForwardIcon style={{color : "green", background:"white",borderRadius:"50%",padding:1 }} /> ボランティアリスト(1月分)</h3>
+    <h3 className="sub"><AccessibleForwardIcon style={{color : "green", background:"white",borderRadius:"50%",padding:1 }} /> ボランティアリスト(2月分)</h3>
     <div style={{border : "dashed",margin:"10px 10px 30px 10px",fontSize:"0.9rem" }}> 
       <section style={{ margin:"10px" }}>
     <p>今月中無料でボランティアしちゃうリスト</p>
@@ -35,7 +35,7 @@ const OthersArticle = ({ article,articleTimeout,otherSrc,close }) => (
     <h3 className="sub"><GradeIcon style={{color : "#ffcd3c", background:"white",borderRadius:"50%",padding:1 }} /> 欲しいものリスト</h3>
     <div style={{border : "dashed",margin:"10px 10px 30px 10px",fontSize:"0.9rem" }}> 
       <section style={{ margin:"10px" }}>
-    <p>現在中国なので休止中っ！！</p>
+    <p>ビットコインとデジタル人民元かリブラがほしい。。。</p>
     </section>
     </div>
     {/* バケットリスト */}
@@ -78,6 +78,6 @@ export default OthersArticle;
 OthersArticle.propTypes = {
     article : PropTypes.string.isRequired,
     articleTimeout : PropTypes.bool.isRequired,
-    otherSrc: PropTypes.object.isRequired,
+    otherSrc: PropTypes.string.isRequired,
     close : PropTypes.element.isRequired,
 };
