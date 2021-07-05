@@ -1,28 +1,28 @@
-import React,{useState,useEffect,useRef} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import Layout from '../components/layout'
 import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
 
 const IndexPage =(props) => {
-  const [articleVisible,setArticleVisible] = useState(false);
-  const [timeflag,setTimeflag] = useState(false);
-  const [articleTimeout,setArticleTimeout] = useState(false);
-  const [article,setArticle] = useState('');
-  const [loading,setLoading] = useState('is-loading');
+  const [articleVisible, setArticleVisible] = useState(false);
+  const [timeflag, setTimeflag] = useState(false);
+  const [articleTimeout, setArticleTimeout] = useState(false);
+  const [article, setArticle] = useState('');
+  const [loading, setLoading] = useState('is-loading');
 
   const wrapperRef = useRef(null);
   useEffect(()=>{
     const timeoutId = setTimeout(()=>{
       setLoading("");
-    },100);
+    }, 100);
 
-    document.addEventListener('mousedown',handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
     return () => {
       if (timeoutId) {
         clearTimeout(timeoutId);
       }
-      document.removeEventListener('mousedown',handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     }});
 
   const handleOpenArticle = (article) => {

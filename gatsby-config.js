@@ -46,6 +46,7 @@ module.exports = {
         policy: [{ userAgent: '*', allow: '/' }]
       }
     }, 
+    'gatsby-plugin-typegen',
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
